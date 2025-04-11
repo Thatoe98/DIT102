@@ -10,5 +10,6 @@ root.config(menu=menubar)
 
 file_menu= tk.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="File", menu=file_menu)
+file_menu.add_command(label="Exit", command=root.quit)
 
 root.mainloop()
